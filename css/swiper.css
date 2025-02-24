@@ -29,16 +29,14 @@
   overflow: hidden;
 }
 
-
-
 .slide-1st {
-  background-image: url(/img/slide-0.jpg);
+  background-image: url(../img/slide-0.jpg);
 }
 
 .slide-2nd {
-  background-image: url(/img/slide-1.jpg);
+  background-image: url(../img/slide-1.jpg);
 }
 
 .slide-3rd {
-  background-image: url(/img/slide-2.jpg);
+  background-image: url(../img/slide-2.jpg);
 }

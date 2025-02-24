@@ -49,21 +49,21 @@
 }
 
 :root {
-  --prime-color: #FF9900;
+  --prime-color: #ff9900;
   --little-title-weight: 700;
   --little-title-size: 24px;
   --font-size: 16px;
   --font-weight: 400px;
   --font-lineheight: 32px;
-  --hero-font-color: #FFF;
+  --hero-font-color: #fff;
   --btn-font-color: #fff;
   --pxs-beetween-secs: 100px;
   --container-paddings: 0px 75px;
-  --footer-prm-color: #CACACA;
+  --footer-prm-color: #cacaca;
   --hover-color: rgba(255, 153, 0, 0.7);
   --focus-color: rgba(255, 153, 0, 0.7);
-  --active-color: #E1670E;
-  --transition-duration: .3s;
+  --active-color: #e1670e;
+  --transition-duration: 0.3s;
   --transition-timing-function: ease;
 }
 
@@ -125,7 +125,6 @@ input {
   margin-right: auto;
 }
 
-
 .title {
   font-size: 48px;
   font-weight: 400;
@@ -155,7 +154,8 @@ p {
   letter-spacing: 0em;
   padding: 24.83px 36.88px;
   cursor: pointer;
-  transition: background-color var(--transition-duration) var(--transition-timing-function);
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .btn:hover {
@@ -186,7 +186,7 @@ p {
   box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%);
 }
 
-.header__container>* {
+.header__container > * {
   flex-shrink: 0;
 }
 
@@ -222,12 +222,11 @@ p {
   width: 18;
 }
 
-
 .menu__close {
   display: none;
   height: 25px;
   width: 25px;
-  background-image: url(/img/menu__close.svg);
+  background-image: url(../img/menu__close.svg);
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 108px;
@@ -264,19 +263,15 @@ p {
   border-bottom: solid 2px var(--prime-color);
 }
 
-.menu__link:focus
-.burger:focus
-.menu__close:focus
-.header__btn_search:focus {
-  outline: solid 3px var(--prime-color, #FF9900);
+.menu__link:focus .burger:focus .menu__close:focus .header__btn_search:focus {
+  outline: solid 3px var(--prime-color, #ff9900);
 }
 
 .menu__link:active {
-  border-bottom: solid 2px var(--active-color, #E1670E);
-  color: var(--active-color, #E1670E);
+  border-bottom: solid 2px var(--active-color, #e1670e);
+  color: var(--active-color, #e1670e);
   outline: none;
 }
-
 
 .menu__item:not(:last-child) {
   margin-right: 85px;
@@ -304,8 +299,6 @@ p {
 .header__btn_search:focus {
   outline: 2px solid var(--prime-color);
 }
-
-
 
 /* Hero */
 .hero__wrapper {
@@ -359,7 +352,12 @@ p {
   flex: 1 0 49%;
   height: 100%;
   margin-right: 32px;
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.31) 100%), url(/img/list-in-about__item-big.jpg);
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.31) 100%
+    ),
+    url(../img/list-in-about__item-big.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -378,7 +376,7 @@ p {
   font-weight: 700;
   font-size: 16px;
   line-height: 32px;
-  color: #FFF;
+  color: #fff;
 }
 
 .list-in-about__btn {
@@ -409,7 +407,7 @@ p {
 .list-in-about__item_card {
   display: inline-block;
   min-height: 295px;
-  border: 1px solid #CACACA;
+  border: 1px solid #cacaca;
   padding: 65px 100px 15px 300px;
   background-repeat: no-repeat;
   background-position: 8.3% center;
@@ -425,11 +423,11 @@ p {
 
 .list-in-about__item_cube {
   margin-bottom: 32px;
-  background-image: url(/img/list-in-about__item_cube.svg);
+  background-image: url(../img/list-in-about__item_cube.svg);
 }
 
 .list-in-about__item_gear {
-  background-image: url(/img/list-in-about__item_gear.svg);
+  background-image: url(../img/list-in-about__item_gear.svg);
 }
 
 /* How */
@@ -477,31 +475,30 @@ p {
 
 .step-info__text {
   max-width: 758px;
-
 }
 
 .step__info__img {
   width: 870px;
   height: 460px;
-  background-image: url(/img/how__decorative-0.jpg);
+  background-image: url(../img/how__decorative-0.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .step__info__img-zero {
-  background-image: url(/img/how__decorative-0.jpg);
+  background-image: url(../img/how__decorative-0.jpg);
 }
 
 .step__info__img-one {
-  background-image: url(/img/how__decorative-1.jpg);
+  background-image: url(../img/how__decorative-1.jpg);
 }
 
 .step__info__img-two {
-  background-image: url(/img/how__decorative-2.jpg);
+  background-image: url(../img/how__decorative-2.jpg);
 }
 
 .step__info__img-three {
-  background-image: url(/img/how__decorative-3.jpg);
+  background-image: url(../img/how__decorative-3.jpg);
 }
 
 .step-info__heading {
@@ -526,11 +523,11 @@ p {
 }
 
 .step-info__btn:hover {
-  background-color: #F7B045;
+  background-color: #f7b045;
 }
 
 .step-info__btn:focus {
-  background-color: #F7B045;
+  background-color: #f7b045;
 }
 
 .btn_black-white {
@@ -576,7 +573,8 @@ p {
   font-size: var(--little-title-size);
   line-height: 1;
   border-top: 0.5px solid var(--footer-prm-color);
-  transition: border var(--transition-timing-function) var(--transition-duration);
+  transition: border var(--transition-timing-function)
+    var(--transition-duration);
 }
 
 .faq__item:last-child {
@@ -617,7 +615,6 @@ p {
 
 .ui-widget {
   font-family: Montserrat, sans-serif;
-  ;
 }
 
 .ui-state-default {
@@ -638,7 +635,8 @@ p {
 }
 
 .faq__svg {
-  transition: transform var(--transition-timing-function) var(--transition-duration);
+  transition: transform var(--transition-timing-function)
+    var(--transition-duration);
 }
 
 .faq__svg ellipse,
@@ -646,7 +644,7 @@ p {
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
-.faq__item>* {
+.faq__item > * {
   cursor: pointer;
 }
 
@@ -669,8 +667,8 @@ p {
 }
 
 .faq__item:active {
-  border-bottom: 1px solid #CACACA;
-  border-top: 1px solid #CACACA;
+  border-bottom: 1px solid #cacaca;
+  border-top: 1px solid #cacaca;
 }
 
 .faq__item:active .faq__svg {
@@ -686,7 +684,7 @@ p {
 }
 
 .faq__item:active .faq__svg ellipse {
-  fill: #ECECEC;
+  fill: #ececec;
 }
 
 /* Footer */
@@ -757,7 +755,8 @@ p {
 }
 
 .footer__social {
-  transition: outline var(--transition-duration) var(--transition-timing-function);
+  transition: outline var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .footer__social:focus {
@@ -833,5 +832,5 @@ p {
 }
 
 .footer__checkbox-lab {
-  color: #CACACA;
+  color: #cacaca;
 }
